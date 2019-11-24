@@ -2,26 +2,23 @@
 
 The purpose of this exercise is to practice creating a new MVC project using Entity and Identity Frameworks.
 
-Your instruction team will demonstrate creating the initial structure of this application and then give you time to build it on your own.
-
-> **NOTE:** It is **not** necessary to complete this exercise in order to learn from it.
 
 ## The BookShelf App
 
 The goal of this application is to allow users to keep track of the books they have on their bookshelf, as well as the authors of those books.
 
-This application should be built in ASP.<span>NET</span> Core MVC with Entity and Identity Frameworks and use a SQL Server database to store data.
+This application is built in ASP.<span>NET</span> Core MVC with Entity and Identity Frameworks and use a SQL Server database to store data.
 
 
 ### Data Entities
 
-The application should have the following entities with their associated properties.
+The application has the following entities with their associated properties.
 
 #### ApplicationUser
 
 * First Name
 * Last Name
-* Full Name (_This property should not be saved to the database. See the [NotMapped ](https://www.learnentityframeworkcore.com/configuration/data-annotation-attributes/notmapped-attribute) data annotation_)
+* Full Name
 * _...All `IdentityUser` properties..._
 
 
@@ -29,7 +26,7 @@ The application should have the following entities with their associated propert
 
 * First Name
 * Last Name
-* Full Name (_This property should not be saved to the database_)
+* Full Name
 * Penname (_optional_)
 * PreferredGenre (_optional_)
 * List of Books written by this Author
@@ -55,7 +52,3 @@ The application should have the following entities with their associated propert
 1. A user should be able to perform all CRUD operations on a Book.
 1. Users should **only** be allowed to View, Edit or Delete Books and Authors that **they created**.
 1. Only Authors **not associated with a Book** may be deleted.
-
-
-> **NOTE:** This is a complex project that entails much of what we've covered throughout this course. **It is a challenging exercise.** Do not let yourself get stuck on anything for too long without asking for help.
-
