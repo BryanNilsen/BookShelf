@@ -49,7 +49,7 @@
     {
         foreach (var book in Model.Books)
         {
-            <p>@book.Title</p>
+            <p><a asp-controller="Books" asp-action="Details" asp-route-id="@book.Id">@book.Title</a></p>
         }
 
     }
